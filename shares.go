@@ -14,14 +14,14 @@ import (
 
 func main() {
     if err := root(); err != nil {
-        fmt.Println(err)
+        log.Fatal(err)
         os.Exit(1)
     }
 }
 
 func root() error {
     // Args
-    total_keys_flag := flag.Int("k", 0, "# of keys")
+    total_keys_flag := flag.Int("k", 0, "Number of keys go generate")
     threshold_keys_flag := flag.Int("t", 0, "Threshold # of keys to recreate")
     flag_key_length := flag.Int("l", 64, "Length of generated key")
     flag.Parse()
@@ -30,7 +30,7 @@ func root() error {
     threshold_keys := *threshold_keys_flag
 
     if total_keys < threshold_keys {
-        log.Fatal("Total keys less than rebuild keys")
+        log.Fatal("Total keys is less than threshold keys")
     }
 
     // Gen key + shared
@@ -38,7 +38,8 @@ func root() error {
     if err != nil { return err }
     base64_key := base64.StdEncoding.EncodeToString(rand_bytes)
     fmt.Printf("random key[%v]\n%s\n", *flag_key_length, base64_key)
-    fmt.Printf("generating keys[%v] threshold[%v]\n", total_keys, threshold_keys)
+
+    fmt.Printf("\ngenerating keys[%v] threshold[%v]\n", total_keys, threshold_keys)
     keys, err := splitBytes(rand_bytes, total_keys, threshold_keys)
     if err != nil { return err }
 
@@ -47,9 +48,16 @@ func root() error {
         fmt.Printf("key[%v]: %s\n", index, base64_key)
     }
 
-    // Check what was generate
+    // Check what was generated
+    fmt.Printf("\n")
     for i := threshold_keys; i <= total_keys; i++ {
-        rebuildKey(keys, i) 
+        rebuilt, err := rebuildKey(keys, i) 
+        if err != nil { return err }
+        base64_check := base64.StdEncoding.EncodeToString(rebuilt)
+        if base64_key != base64_check {
+            return fmt.Errorf("Check failed for [%v] keys\n%s", i, base64_check)
+        } 
+        fmt.Printf("Using [%v] keys ok: %s\n", i, base64_check)
     }
     return nil
 }
@@ -74,10 +82,6 @@ func rebuildKey(inputs [][]byte, count int) ([]byte, error){
     for _, v := range perm[:count] {
         keys_to_rebuild = append(keys_to_rebuild, inputs[v])
     }
-    rebuilt_key, err := rebuildBytes(keys_to_rebuild) 
-    if err != nil { return []byte{}, err }
-    rebuilt_key_base64 := base64.StdEncoding.EncodeToString(rebuilt_key)
-    fmt.Printf("Using [%v] keys %v\n%s\n", len(keys_to_rebuild), perm[:count], rebuilt_key_base64)
-    return rebuilt_key, nil
+    return rebuildBytes(keys_to_rebuild) 
 }
 

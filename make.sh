@@ -11,7 +11,7 @@ IMAGE_REPO="me/${IMAGE_NAME}"
 IMAGE_TAG="latest"
 
 run:nodemon () {
-  nodemon -x "go run shares.go -k 6 -t 4 || exit 1"
+  nodemon -e go,sum,json -x "go run shares.go -k 6 -t 4 || exit 1"
 }
 
 run:build () {
