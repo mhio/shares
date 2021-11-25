@@ -1,10 +1,10 @@
 FROM golang:1.17 as build
-WORKDIR /go/src/app
-COPY go.sum go.mod /go/src/app/
+WORKDIR /app
+COPY go.sum go.mod /app/
 RUN go mod download
-COPY . .
+COPY . /app/
 RUN CGO_ENABLED=0 go build -ldflags '-extldflags "-static"' -tags timetzdata
 
 FROM scratch
-COPY --from=build /go/bin/shares /shares
+COPY --from=build /app/shares /shares
 ENTRYPOINT ["/shares"]
