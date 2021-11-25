@@ -15,18 +15,17 @@ Usage of ./shares-darwin-amd64:
 
 ```
 $ ./shares-linux-amd64 -k 5 -t 3 -l 32
-random key[64]
-0Jlecf6ctgjx3RYujDsBon/zoJhcMU3u2aiuiVCaakS5axaAbXgbxRH7cw3WC7IUEbQlNLD+oRHrNYLiwwHg8A==
+random key[32]
+kcYKTr52jK60FQx5/YKAyzlLqrZ9tWHHZM84cIXIfZA=
 
-generating keys[6] threshold[4]
-key[0]: beCTsV4i7S6MfURcPE54n2hq44lxjnYVPfkmvk7cAYA+aP4O5HzNqIcgB30XDlDirP+XqLtozJoBxS7DfPSzX/k=
-key[1]: aawKIuKnceU8c5biKbRgXPlURXu2yJ7G5CYLJzbeNgzUDhMCeFN3CqPRpYinTs0Wo99GAX1QbrhO3VBsTiXxaKA=
-key[2]: 44CbTxn5f6MUXcdbVMILJ6h1VwNvCyNfNqFfccdTPnQUDfnRBS6/az6gRglBGnsEr7aVN483t3rm1K2qbgyVQRI=
-key[3]: LhcfPhXEqbf/genAsjWilzyQMPt6yLKTgKHblj9s/NzMw3e0dAzprAQcM8nr+M4aSgKYLBWO3LoJ7RGCgm5L8Js=
-key[4]: G1QvE6ryaECQCVnjU6xp8WHaxoWhVBzDEXPi3TQ5YD70Jq4s1UdUJ5Y0h6e6hl/aG6Q+644M7t5U4heilUAMb2I=
-key[5]: hToD8XOc8lJkMwq9cNpqMK0ddQm61y8cXIb6Q60LvoxM3X8eQmc+1eTc3aDoY33lf4NAgezGvKlLV6qYXJChk+s=
+generating keys[5] threshold[3]
+key[0]: fq6IaeCN+EvF816i0SDzdUcwpX3iIZ+s5n0Yw+22+dAp
+key[1]: lBCdbwHKbsUjrQh4zXDFvOIc0m9whugxDR8aRjZMB4Tm
+key[2]: gW0YJSLRUWp8gsH1XPrhCWH1pkzvkeuM4tsNrSrG/8wx
+key[3]: n216h6zKmVKxb9Zetw2+8pUqmKzZiCaLFWPwY2MRjYys
+key[4]: GkOtKqW2m2oA6MEXToqoLxlAxuSJhjgMitRsXNVcEYHe
 
-Using [4] keys ok: 0Jlecf6ctgjx3RYujDsBon/zoJhcMU3u2aiuiVCaakS5axaAbXgbxRH7cw3WC7IUEbQlNLD+oRHrNYLiwwHg8A==
-Using [5] keys ok: 0Jlecf6ctgjx3RYujDsBon/zoJhcMU3u2aiuiVCaakS5axaAbXgbxRH7cw3WC7IUEbQlNLD+oRHrNYLiwwHg8A==
-Using [6] keys ok: 0Jlecf6ctgjx3RYujDsBon/zoJhcMU3u2aiuiVCaakS5axaAbXgbxRH7cw3WC7IUEbQlNLD+oRHrNYLiwwHg8A==
+Using [3] keys ok: kcYKTr52jK60FQx5/YKAyzlLqrZ9tWHHZM84cIXIfZA=
+Using [4] keys ok: kcYKTr52jK60FQx5/YKAyzlLqrZ9tWHHZM84cIXIfZA=
+Using [5] keys ok: kcYKTr52jK60FQx5/YKAyzlLqrZ9tWHHZM84cIXIfZA=
 ```
