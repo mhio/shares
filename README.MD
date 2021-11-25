@@ -6,7 +6,7 @@ Generate base64 encoded shamir's secret sharing keys.
 $ ./shares-linux-amd64 -h
 Usage of ./shares-darwin-amd64:
   -k int
-    	Number of keys go generate
+    	Number of keys to generate
   -l int
     	Length of generated key (default 64)
   -t int
