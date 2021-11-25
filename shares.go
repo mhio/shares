@@ -22,8 +22,8 @@ func main() {
 func root() error {
     // Args
     total_keys_flag := flag.Int("k", 0, "# of keys")
-    threshold_keys_flag := flag.Int("t", 0, "threshold # of keys to recreate")
-    flag_key_length := flag.Int("l", 64, "Lenght of key")
+    threshold_keys_flag := flag.Int("t", 0, "Threshold # of keys to recreate")
+    flag_key_length := flag.Int("l", 64, "Length of generated key")
     flag.Parse()
 
     total_keys := *total_keys_flag	
