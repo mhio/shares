@@ -37,4 +37,3 @@ shift
 
 set -x
 run:$cmd "$@"
-
