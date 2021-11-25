@@ -4,29 +4,29 @@ Generate base64 encoded shamir's secret sharing keys.
 
 ```
 $ ./shares-linux-amd64 -h
-Usage of ./shares-linux-amd64:
+Usage of ./shares-darwin-amd64:
   -k int
-      # of keys
+    	Number of keys go generate
   -l int
-      Length of generated key (default 64)
+    	Length of generated key (default 64)
   -t int
-      Threshold # of keys to recreate
+    	Threshold # of keys to recreate
 ```
 
 ```
 $ ./shares-linux-amd64 -k 5 -t 3 -l 32
-random key[32]
-ip9rb+kGqrLkXwlrzFSoXOVY+OW7rn77eaXKfEDh7tc=
-generating keys[5] threshold[3]
-key[0]: OF73jXGem3MIaQqkcKw+sbgpNqHy1DIx+SqvDpPpTcfe
-key[1]: sBzEMAPUg8BrQMueWw5xVGme/Y/ZgpKmkgI4Xgi28FxR
-key[2]: t83PcLwEJ8wkBo0LTbX7w9mmzetv+scaB1nR6qKx4QVT
-key[3]: m37Oz5nKrwn3V7oPzzpAhVbbr+UkblZ81LWpGJgGIrvb
-key[4]: LO0KkNJdUqUJ/GIodmjMrmL1aPtbJaG6QayWh5DPxWDQ
-Using [3] keys [2 3 0]
-ip9rb+kGqrLkXwlrzFSoXOVY+OW7rn77eaXKfEDh7tc=
-Using [4] keys [4 0 2 1]
-ip9rb+kGqrLkXwlrzFSoXOVY+OW7rn77eaXKfEDh7tc=
-Using [5] keys [4 1 3 0 2]
-ip9rb+kGqrLkXwlrzFSoXOVY+OW7rn77eaXKfEDh7tc=
+random key[64]
+0Jlecf6ctgjx3RYujDsBon/zoJhcMU3u2aiuiVCaakS5axaAbXgbxRH7cw3WC7IUEbQlNLD+oRHrNYLiwwHg8A==
+
+generating keys[6] threshold[4]
+key[0]: beCTsV4i7S6MfURcPE54n2hq44lxjnYVPfkmvk7cAYA+aP4O5HzNqIcgB30XDlDirP+XqLtozJoBxS7DfPSzX/k=
+key[1]: aawKIuKnceU8c5biKbRgXPlURXu2yJ7G5CYLJzbeNgzUDhMCeFN3CqPRpYinTs0Wo99GAX1QbrhO3VBsTiXxaKA=
+key[2]: 44CbTxn5f6MUXcdbVMILJ6h1VwNvCyNfNqFfccdTPnQUDfnRBS6/az6gRglBGnsEr7aVN483t3rm1K2qbgyVQRI=
+key[3]: LhcfPhXEqbf/genAsjWilzyQMPt6yLKTgKHblj9s/NzMw3e0dAzprAQcM8nr+M4aSgKYLBWO3LoJ7RGCgm5L8Js=
+key[4]: G1QvE6ryaECQCVnjU6xp8WHaxoWhVBzDEXPi3TQ5YD70Jq4s1UdUJ5Y0h6e6hl/aG6Q+644M7t5U4heilUAMb2I=
+key[5]: hToD8XOc8lJkMwq9cNpqMK0ddQm61y8cXIb6Q60LvoxM3X8eQmc+1eTc3aDoY33lf4NAgezGvKlLV6qYXJChk+s=
+
+Using [4] keys ok: 0Jlecf6ctgjx3RYujDsBon/zoJhcMU3u2aiuiVCaakS5axaAbXgbxRH7cw3WC7IUEbQlNLD+oRHrNYLiwwHg8A==
+Using [5] keys ok: 0Jlecf6ctgjx3RYujDsBon/zoJhcMU3u2aiuiVCaakS5axaAbXgbxRH7cw3WC7IUEbQlNLD+oRHrNYLiwwHg8A==
+Using [6] keys ok: 0Jlecf6ctgjx3RYujDsBon/zoJhcMU3u2aiuiVCaakS5axaAbXgbxRH7cw3WC7IUEbQlNLD+oRHrNYLiwwHg8A==
 ```
