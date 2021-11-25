@@ -1,27 +1,32 @@
+# shares
+
+Generate base64 encoded shamir's secret sharing keys.
+
 ```
-$ ./shares-darwin-amd64 -h             
-Usage of ./shares-darwin-amd64:
+$ ./shares-linux-amd64 -h
+Usage of ./shares-linux-amd64:
   -k int
       # of keys
   -l int
-      Lenght of key (default 64)
+      Length of generated key (default 64)
   -t int
-      threshold # of keys to recreate
+      Threshold # of keys to recreate
 ```
 
 ```
-$ ./shares-darwin-amd64 -k 5 -t 3 -l 32
-Gbx5tS8RHW+Y97tbxra11GlETrK0k/8VAx3jwHl+BYo=
+$ ./shares-linux-amd64 -k 5 -t 3 -l 32
+random key[32]
+ip9rb+kGqrLkXwlrzFSoXOVY+OW7rn77eaXKfEDh7tc=
 generating keys[5] threshold[3]
-key[0]: tVqeYrCZQzxDtPSc48uol7xZtzT6a0bNixIC4pbSRzi1
-key[1]: LJtCLMmq0BLaKWufaFCDnN+v07MsMhB0tn4tUyu03D++
-key[2]: CnB6gXo4qaBqadW+tISDu+l2icjjU9P4gNMzVaogTg1U
-key[3]: YvjX++VfcAuAXwqMbkD444VU1gpSqcNh32qCyyaZMQ/K
-key[4]: LmTH7evYR325pPlY7g0iUj/h8AbvODXoJtq1zpeThXil
-Using [3] keys [3 4 0]
-Gbx5tS8RHW+Y97tbxra11GlETrK0k/8VAx3jwHl+BYo=
-Using [4] keys [2 4 3 1]
-Gbx5tS8RHW+Y97tbxra11GlETrK0k/8VAx3jwHl+BYo=
-Using [5] keys [0 1 4 2 3]
-Gbx5tS8RHW+Y97tbxra11GlETrK0k/8VAx3jwHl+BYo=
+key[0]: OF73jXGem3MIaQqkcKw+sbgpNqHy1DIx+SqvDpPpTcfe
+key[1]: sBzEMAPUg8BrQMueWw5xVGme/Y/ZgpKmkgI4Xgi28FxR
+key[2]: t83PcLwEJ8wkBo0LTbX7w9mmzetv+scaB1nR6qKx4QVT
+key[3]: m37Oz5nKrwn3V7oPzzpAhVbbr+UkblZ81LWpGJgGIrvb
+key[4]: LO0KkNJdUqUJ/GIodmjMrmL1aPtbJaG6QayWh5DPxWDQ
+Using [3] keys [2 3 0]
+ip9rb+kGqrLkXwlrzFSoXOVY+OW7rn77eaXKfEDh7tc=
+Using [4] keys [4 0 2 1]
+ip9rb+kGqrLkXwlrzFSoXOVY+OW7rn77eaXKfEDh7tc=
+Using [5] keys [4 1 3 0 2]
+ip9rb+kGqrLkXwlrzFSoXOVY+OW7rn77eaXKfEDh7tc=
 ```
