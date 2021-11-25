@@ -8,7 +8,7 @@ import (
 	"crypto/rand"
   mathRand "math/rand"
   "encoding/base64"
-	"github.com/hashicorp/vault/shamir"
+  "mhio.dev/go/shares/hashi"
 )
 
 
