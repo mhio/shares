@@ -29,3 +29,9 @@ Using [3] keys ok: kcYKTr52jK60FQx5/YKAyzlLqrZ9tWHHZM84cIXIfZA=
 Using [4] keys ok: kcYKTr52jK60FQx5/YKAyzlLqrZ9tWHHZM84cIXIfZA=
 Using [5] keys ok: kcYKTr52jK60FQx5/YKAyzlLqrZ9tWHHZM84cIXIfZA=
 ```
+
+
+Shamir implementation MPL2.0 from Hashicorp Vault
+
+https://github.com/hashicorp/vault/blob/v1.9.0/shamir/
+
