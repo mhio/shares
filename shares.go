@@ -8,7 +8,7 @@ import (
 	"log"
 	mathRand "math/rand"
 
-	shamir "mhio.dev/go/shares/hashi"
+	shamir "mhio.dev/go/shares/hashicorp"
 )
 
 func main() {
