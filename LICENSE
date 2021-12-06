@@ -1,4 +1,8 @@
-MIT License
+This software incorporates portions under the following license (/hashicorp/shamir.go):
+
+  Mozilla Public License, version 2.0
+
+The remainder of this software is licensed under the MIT License
 
 Copyright (c) 2021 mhio
 
