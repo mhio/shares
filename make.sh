@@ -27,7 +27,7 @@ run:help(){
   set +x
   printf "Commands:\n"
   declare -F | awk '/^declare -f run:/ { printf("  %s\n", substr($0,16)); }'
-  exit 0
+  exit 1
 }
 
 [ -z "${1:-}" ] && run:help
